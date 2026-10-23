@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration | Student Management Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Student<span>Portal</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="registration.html">Registration</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="page-wrap">
+    <section class="page-hero"><p class="eyebrow">GET STARTED</p><h1>Student Registration</h1><p>Complete the form below to practise entering student details.</p></section>
+    <form class="form-panel" action="#" method="get" onsubmit="alert('Demo only: this static form does not save student details.'); return false;">
+      <div class="form-grid">
+        <div class="field"><label for="fullname">Full name</label><input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required></div>
+        <div class="field"><label for="studentid">Student ID</label><input id="studentid" name="studentid" type="text" placeholder="Enter student ID" required></div>
+        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="name@example.com" required></div>
+        <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="Enter phone number"></div>
+        <div class="field"><label for="department">Department</label><select id="department" name="department" required><option value="">Select department</option><option>Computer Science</option><option>Information Technology</option><option>Electronics and Communication</option><option>Mechanical Engineering</option><option>Civil Engineering</option></select></div>
+        <div class="field"><label for="year">Year of study</label><select id="year" name="year" required><option value="">Select year</option><option>First Year</option><option>Second Year</option><option>Third Year</option><option>Fourth Year</option></select></div>
+      </div>
+      <div class="field"><label for="address">Address</label><textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea></div>
+      <label class="checkbox-line"><input type="checkbox" required> I confirm that the information entered is correct.</label>
+      <button class="button" type="submit">Submit registration</button>
+      <p class="form-note">Demo form only — details are not stored or sent to a server.</p>
+    </form>
+  </main>
+  <footer><p>© 2026 Student Management Portal | Foundation of Full Stack</p></footer>
+</body>
+</html>
